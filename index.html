@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library</title>
+  <style>
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    .book-list {
+      margin: 20px 0;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .book-list th, .book-list td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    .book-list th {
+      background-color: #f4f4f4;
+    }
+    .add-book-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 20px 0;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .add-book-btn:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Library</h1>
+  </header>
+  <main>
+    <a href="/add-book" class="add-book-btn">Add New Book</a>
+    <table class="book-list">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Year Published</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Book entries will be dynamically populated here -->
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
